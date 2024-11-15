@@ -121,4 +121,4 @@ def classify_images(images_dir, results_dic, model):
             results_dic[key].extend([model_label, 0])
 
 
-classify_images("pet_images/", "pet_images/", "vgg")
+# classify_images("pet_images/", "pet_images/", "vgg")

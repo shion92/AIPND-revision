@@ -47,7 +47,6 @@ def get_pet_labels(image_dir):
     filename_list = listdir(image_dir)
 
     results_dic = dict()
-    print(f"\nPrints filenames from folder {image_dir}/")
     for filename in filename_list:
         if filename[0] != ".":
             if filename not in results_dic:
