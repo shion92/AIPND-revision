@@ -46,7 +46,9 @@ def get_input_args():
         "--dir", type=str, default="pet_images/", help="path to folder of images"
     )
     parser.add_argument("--arch", default="vgg", help="cnn model")
-    parser.add_argument("--dogfile", default="dognames.txt")
+    parser.add_argument(
+        "--dogfile", default="intropyproject-classify-pet-images/dognames.txt"
+    )
 
     in_args = parser.parse_args()
 

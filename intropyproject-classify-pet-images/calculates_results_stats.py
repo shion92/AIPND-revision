@@ -157,7 +157,7 @@ def calculates_results_stats(results_dic):
     #
     # Calculates % correct for matches
     results_stats_dic["pct_match"] = (
-        results_stats_dic["n_match"] / results_stats_dic["n_images"]
+        results_stats_dic["n_match"] / results_stats_dic["n_images"] * 100
     )
 
     # TODO: 5d. REPLACE zero(0.0) with CODE that calculates the % of correctly
@@ -168,7 +168,7 @@ def calculates_results_stats(results_dic):
     #
     # Calculates % correct dogs
     results_stats_dic["pct_correct_dogs"] = (
-        results_stats_dic["n_correct_dogs"] / results_stats_dic["n_dogs_img"]
+        results_stats_dic["n_correct_dogs"] / results_stats_dic["n_dogs_img"] * 100
     )
 
     # TODO: 5e. REPLACE zero(0.0) with CODE that calculates the % of correctly
@@ -179,7 +179,7 @@ def calculates_results_stats(results_dic):
     #
     # Calculates % correct breed of dog
     results_stats_dic["pct_correct_breed"] = (
-        results_stats_dic["n_correct_breed"] / results_stats_dic["n_dogs_img"]
+        results_stats_dic["n_correct_breed"] / results_stats_dic["n_dogs_img"] * 100
     )
 
     # Calculates % correct not-a-dog images
