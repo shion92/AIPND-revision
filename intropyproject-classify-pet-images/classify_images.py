@@ -81,7 +81,6 @@ def classify_images(images_dir, results_dic, model):
         # inputs: path + filename  and  model, returns model_label
         # as classifier label
         images_dir = os.path.join(os.path.dirname(__file__), images_dir)
-        print(f"Processing image: {images_dir + key} with model: {model}")  # Debugging
         model_label = classifier(images_dir + key, model)
 
         # TODO: 3b. BELOW REPLACE pass with CODE to process the model_label to

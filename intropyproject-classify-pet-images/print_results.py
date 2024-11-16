@@ -78,7 +78,11 @@ def print_results(results_dic, results_stats_dic, model,
 
     # Prints summary statistics (percentages) on Model Run
     print(" ")
-    for key in results_stats_dic:
+    print("PC matched images: {:2f}".format(results_stats_dic["pct_match"]))
+    print("PC correct dogs: {:2f}".format(results_stats_dic["pct_correct_dogs"]))
+    print("PC correct breed: {:2f}".format(results_stats_dic["pct_correct_breed"]))
+                 
+   
         # TODO: 6b. REPLACE pass with CODE that prints out all the percentages 
         #           in the results_stats_dic dictionary. Recall that all 
         #           percentages in results_stats_dic have 'keys' that start with 
@@ -88,11 +92,8 @@ def print_results(results_dic, results_stats_dic, model,
         #           both the key and the value. Remember the value is accessed 
         #           by results_stats_dic[key]
         #
-        if key.startswith('pct'):
-                 print("{:20}: {:2f}".format('PC matched images', results_stats_dic["pct_match"]))
-                 print("{:20}: {:2f}".format('PC correct dogs', results_stats_dic["pct_correct_dogs"]))
-                 print("{:20}: {:2f}".format('PC correct breed', results_stats_dic["pct_correct_breed"]))
-                 
+     
+        
 
     # IF print_incorrect_dogs == True AND there were images incorrectly 
     # classified as dogs or vice versa - print out these cases
@@ -124,7 +125,7 @@ def print_results(results_dic, results_stats_dic, model,
             # Pet Image Label is a Dog - Classified as NOT-A-DOG -OR- 
             # Pet Image Label is NOT-a-Dog - Classified as a-DOG
             if sum(results_dic[key][3:]) == 1:
-                    print("Pet Label: {:40}, Classifier Label: {:40}".format(results_dic[key][0], results_dic[key][1]))
+                    print("Pet Label: {:>40} Classifier Label: {:>40}".format(results_dic[key][0], results_dic[key][1]))
                 
             
 

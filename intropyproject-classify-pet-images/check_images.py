@@ -49,7 +49,6 @@ def main():
     # the collection of these command line arguments from the function call as
     # the variable in_arg
     in_arg = get_input_args()
-    print("in_arg:", in_arg)
 
     # Function that checks command line arguments using in_arg
     check_command_line_arguments(in_arg)

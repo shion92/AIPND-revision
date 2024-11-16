@@ -70,4 +70,4 @@ def get_pet_labels(image_dir):
     return results_dic
 
 
-# get_pet_labels("pet_images/")
+get_pet_labels("pet_images/")
