@@ -19,8 +19,13 @@ with open(
 
 
 def classifier(img_path, model_name):
-    # load the image
     img_pil = Image.open(img_path)
+    
+    # Ensure the image is in RGB mode
+    if img_pil.mode != 'RGB':
+        print(f"Converting image {img_path} from mode {img_pil.mode} to RGB")
+        img_pil = img_pil.convert('RGB')
+
 
     # define transforms
     preprocess = transforms.Compose(

@@ -65,7 +65,7 @@ def get_pet_labels(image_dir):
 
     print("\nPrinting all key-value pairs in dictionary results_dic:")
     for key in results_dic:
-        print(f"Filename: {key}, Pet Label: {results_dic[key][0]}")
+        print(f"Filename (key): {key:40}, Pet Label: {results_dic[key][0]:40}")
 
     return results_dic
 
