@@ -13,7 +13,7 @@ models = {"resnet": resnet18, "alexnet": alexnet, "vgg": vgg16}
 
 # obtain ImageNet labels
 with open(
-    "intropyproject-classify-pet-images/imagenet1000_clsid_to_human.txt"
+    "imagenet1000_clsid_to_human.txt"
 ) as imagenet_classes_file:
     imagenet_classes_dict = ast.literal_eval(imagenet_classes_file.read())
 
