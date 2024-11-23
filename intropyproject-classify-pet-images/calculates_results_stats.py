@@ -89,7 +89,7 @@ def calculates_results_stats(results_dic):
     #
 
     # process through the results dictionary
-    for value in results_dic.items():
+    for value in results_dic.values():
 
         # Labels Match Exactly
         if value[2] == 1:

@@ -9,6 +9,6 @@
 #
 # Usage: sh run_models_batch.sh    -- will run program from commandline within Project Workspace
 #  
-python intropyproject-classify-pet-images/check_images.py --dir pet_images/ --arch resnet   > resnet_pet-images.txt
-python intropyproject-classify-pet-images/check_images.py --dir pet_images/ --arch alexnet  > alexnet_pet-images.txt
-python intropyproject-classify-pet-images/check_images.py --dir pet_images/ --arch vgg   > vgg_pet-images.txt
+python check_images.py --dir pet_images/ --arch resnet   > resnet_pet-images.txt
+python check_images.py --dir pet_images/ --arch alexnet  > alexnet_pet-images.txt
+python check_images.py --dir pet_images/ --arch vgg   > vgg_pet-images.txt

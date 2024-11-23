@@ -81,6 +81,7 @@ def print_results(results_dic, results_stats_dic, model,
     print("PC matched images: {:2f}".format(results_stats_dic["pct_match"]))
     print("PC correct dogs: {:2f}".format(results_stats_dic["pct_correct_dogs"]))
     print("PC correct breed: {:2f}".format(results_stats_dic["pct_correct_breed"]))
+    print("PC correct not dogs: {:2f}".format(results_stats_dic["pct_correct_notdogs"]))
                  
    
         # TODO: 6b. REPLACE pass with CODE that prints out all the percentages 
